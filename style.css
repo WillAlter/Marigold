@@ -5,6 +5,46 @@ body {
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    h1 {
+        align-self: center;
+        font-size: 3rem;
+        padding: 2rem 0 1rem 0;
+        color: #66AC85;
+    }
+
+    .clue-container {
+        h1 {
+            color: black;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.875rem;
+            padding: 0 1rem;
+        }
+
+        hr {
+            margin: 0 1rem 1rem 1rem;
+        }
+
+        .clues-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .clue-btn {
+                padding: 0.5rem 2rem;
+            }
+        }
+
+    }
+}
+
+#first-clue {
+    margin-top: 1rem;
 }
 
 .main-container {
@@ -12,6 +52,24 @@ main {
     flex-direction: column;
     width: 100%;
     height: auto;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    p {
+        padding-left: 2rem;
+
+    }
+
+    ol {
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+
+        li {
+            padding-bottom: 0.5rem;
+        }
+    }
+
+
 
     .code-question {
         border: solid 1px black;
@@ -19,25 +77,26 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 400px;
         align-self: center;
         border-radius: 4px;
         background-color: rgb(211, 210, 210);
 
         h4 {
-            font-size: 1rem;
-            padding-top: 1rem;
+            font-size: 1.5rem;
+            padding: 1rem 1.5rem 0 1.5rem;
             margin: 0;
         }
 
         .code {
             
             background-color: #fff;
-            padding-right: 3rem;
+            padding-right: 6rem;
             padding-top: 2rem;
             margin: 1rem 1rem 1rem 1rem;
 
-
+            pre {
+                font-size: 1.25rem;
+            }
         }
 
     }
@@ -52,7 +111,8 @@ form {
         margin-bottom: 0.5rem;
     }
 
-    button {
+    button.btn-primary {
         margin-top: 1rem;
+        background-color: #9BB0D4;
     }
 }
