@@ -1,0 +1,38 @@
+body {
+   background-color: #FFE4C4; 
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+
+    .code-question {
+        border: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+        align-self: center;
+        border-radius: 4px;
+        background-color: rgb(211, 210, 210);
+
+        h4 {
+            font-size: 1rem;
+            padding-top: 1rem;
+            margin: 0;
+        }
+
+        .code {
+            
+            background-color: #fff;
+            padding-right: 3rem;
+            padding-top: 2rem;
+            margin: 1rem 1rem 1rem 1rem;
+
+
+        }
+
+    }
+}
