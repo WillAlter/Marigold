@@ -1,11 +1,17 @@
 body {
-   background-color: #FFE4C4; 
+   background-color: #FFE4C4;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    width: 100%;
+    height: auto;
 
     .code-question {
         border: solid 1px black;
@@ -34,5 +40,19 @@ body {
 
         }
 
+    }
+}
+
+form {
+    width: 90%;
+    align-self: center;
+    padding-top: 1rem;
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    button {
+        margin-top: 1rem;
     }
 }
