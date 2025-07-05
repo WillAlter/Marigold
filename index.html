@@ -17,13 +17,12 @@
   <main role="main">
     <div class="main-container">
       <h1>Hello, Marigold.</h1>
-      <p>To receive insight, please enter the password hidden within this page. It is in three parts:</p>
+      <p>To receive insight, please enter the password hidden within this device. It is in three parts, combined into a single password of:</p>
       <ol>
-        <li>All of the letters in the color hexcodes of the following: the background, the title, and the submit button
-          (in all caps)
+        <li>All of the letters in the hexcode/hex trio of the following colors, in that order: Vermillion, Emerald, Violet (in all caps)
         </li>
-        <li>The Console Master's greeting</li>
-        <li>Fill in the blanks of the following code, and combine all of them in one string:</li>
+        <li>Margaret's greeting, punctuation included</li>
+        <li>Fill in the blanks of the following code, and combine all of them in a string of characters:</li>
       </ol>
       <div class="code-question">
         <h4>Print 'steven' as long as 'steven' is less than 30.</h4>
@@ -44,7 +43,7 @@
         <div class="form-group">
           <label for="password">Password:</label>
           <input type="password" class="form-control" id="password" required>
-          <div id="errorMsg" class="text-danger mt-2" style="display:none;">Incorrect password.</div>
+          <div id="errorMsg" class="text-danger mt-2" style="display:none;">The correct password has 24 characters.</div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -52,7 +51,7 @@
   </main>
 
   <script>
-    const correctPassword = "FFECACBBDHowdy!while<steven++"; // Change this to your desired password
+    const correctPassword = "ECFFHowdy!while<steven++"; // Change this to your desired password
 
     document.getElementById("passwordForm").addEventListener("submit", function (e) {
       e.preventDefault(); // Prevent form from submitting normally
